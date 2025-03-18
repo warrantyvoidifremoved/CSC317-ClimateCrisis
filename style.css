@@ -38,3 +38,12 @@ body {
     font-style: normal;
     font-optical-sizing: auto;
 }
+
+@media (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
+}
