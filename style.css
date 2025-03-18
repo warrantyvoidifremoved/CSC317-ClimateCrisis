@@ -37,4 +37,11 @@ body {
     font-family: 'IBM Plex Serif';
     font-style: normal;
     font-optical-sizing: auto;
+
+}
+
+#SFSU {
+    background-color: #231161;
+    font-weight: bold;
+    color: #C99700;
 }
