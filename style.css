@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: linear-gradient(#fefae080, #fefae080), url('navbar.webp') center/cover no-repeat;
+    background: linear-gradient(#fefae080, #fefae080), url('images/navbar.webp') center/cover no-repeat;
     color: black;
     border-radius: 8px;
     max-width: 90%;
@@ -91,27 +91,27 @@ body {
 }
 
 #overview::before {
-    background-image: url('overview.webp');
+    background-image: url('images/overview.webp');
 }
 
 #agricultural::before {
-    background-image: url('agricultural.webp');
+    background-image: url('images/agricultural.webp');
 }
 
 #climatechange::before {
-    background-image: url('climatechange.webp');
+    background-image: url('images/climatechange.webp');
 }
 
 #urbanization::before {
-    background-image: url('urbanization.webp');
+    background-image: url('images/urbanization.webp');
 }
 
 #economics::before {
-    background-image: url('economic.webp');
+    background-image: url('images/economic.webp');
 }
 
 #technology::before {
-    background-image: url('technology.webp');
+    background-image: url('images/technology.webp');
 }
 
 .text {
