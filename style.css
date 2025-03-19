@@ -51,7 +51,7 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: #dda15e;
+    background-color: #bc6c25;
 }
 
 /* Content Styles */
@@ -60,56 +60,82 @@ body {
 }
 
 .issuesContainer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 50px 0;
     box-sizing: border-box;
     max-width: 90%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .issue {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 85% 15%;
-    gap: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    position: relative;
+    background-color: #bc6c25;
+    border-radius: 8px;
+    min-height: 400px;
+}
+
+.issue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+#overview::before {
+    background-image: url('overview.webp');
+}
+
+#agricultural::before {
+    background-image: url('agricultural.webp');
+}
+
+#climatechange::before {
+    background-image: url('climatechange.webp');
+}
+
+#urbanization::before {
+    background-image: url('urbanization.webp');
+}
+
+#economics::before {
+    background-image: url('economic.webp');
+}
+
+#technology::before {
+    background-image: url('technology.webp');
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    align-self: center;
     justify-content: center;
-    align-items: center;
-    text-align: left;
-    background: #bc6c25;
+    align-items: center; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(188, 108, 37, 0.8);
     color: black;
-    border-radius: 8px;
-    padding: 50px 10px;
+    padding: 0 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, border 0.3s ease;
+    border: solid black 1px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .text:hover {
     background-color: #dda15e;
     border: 2mm inset black;
-}
-
-.image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
 }
 
 #SFSU {
@@ -119,17 +145,18 @@ body {
     border-radius: 8px;
     padding: 10px 20px;
     max-width: 90%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 /* Media Queries */
-@media (max-width: 600px) {
-    html,
-    body {
-        overflow-x: hidden;
-    }
+@media (max-width: 1200px) {
+    .issuesContainer {
+        grid-template-columns: repeat(2, 1fr);
+   }
+}
 
-    body {
-        position: relative;
-    }
+@media (max-width: 800px) {
+    .issuesContainer {
+        grid-template-columns: 1fr;
+   }
 }
