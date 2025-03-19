@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #2B65EC;
     color: white;
 }
 
@@ -14,7 +14,6 @@
     font-weight: bold;
 }
 
-/* Styling the navigation links */
 .nav-links {
     display: flex;
     list-style: none;
@@ -30,14 +29,27 @@
 }
 
 .nav-links a:hover {
-    background-color: #555;
+    background-color: #4C7DF0;
 }
 
 body {
     font-family: 'IBM Plex Serif';
     font-style: normal;
     font-optical-sizing: auto;
+    background-color: #FCFBF4;
+}
 
+.issuesContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.issue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #SFSU {
