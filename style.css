@@ -50,7 +50,7 @@ body {
 
 .issuesContainer {
     display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -89,17 +89,12 @@ body {
 }
 
 @media (max-width: 600px) {
-
     html,
     body {
         overflow-x: hidden;
     }
 
     body {
-        position: relative
-    }
-
-    .issuesContainer {
-        grid-template-columns: 1fr;
+        position: relative;
     }
 }
