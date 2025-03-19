@@ -1,15 +1,20 @@
-/* Color palette: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 */
+/*
+Color Palette: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25
+Fonts: IBM Plex Serif from Google Fonts
+*/
 
+/* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
     font-family: 'IBM Plex Serif';
     font-style: normal;
     font-optical-sizing: auto;
-    background: linear-gradient(45deg, #283618 50%, #606C38 50%);
+    background: linear-gradient(45deg, #283618 50%, #606c38 50%);
     height: 100vh;
 }
 
+/* Navbar Styles */
 .navbar {
     display: flex;
     position: sticky;
@@ -26,7 +31,7 @@ body {
 }
 
 .title {
-    font-size: 1.5em;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -49,6 +54,7 @@ body {
     background-color: #dda15e;
 }
 
+/* Content Styles */
 .headings {
     text-decoration: underline;
 }
@@ -57,8 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
     box-sizing: border-box;
     max-width: 90%;
     margin: 0 auto;
@@ -84,11 +89,14 @@ body {
     background: #bc6c25;
     color: black;
     border-radius: 8px;
-    padding: 0px 10px;
+    padding: 50px 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, border 0.3s ease;
-    padding-top: 50px;
-    padding-bottom: 50px;
+}
+
+.text:hover {
+    background-color: #dda15e;
+    border: 2mm inset black;
 }
 
 .image {
@@ -102,12 +110,6 @@ body {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-
-}
-
-.text:hover {
-    background-color: #dda15e;
-    border: 2mm inset black;
 }
 
 #SFSU {
@@ -120,8 +122,8 @@ body {
     margin: 0 auto;
 }
 
+/* Media Queries */
 @media (max-width: 600px) {
-
     html,
     body {
         overflow-x: hidden;
