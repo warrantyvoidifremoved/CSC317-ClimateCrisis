@@ -1,12 +1,28 @@
+/* Color palette: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 */
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-optical-sizing: auto;
+    background: linear-gradient(45deg, #283618 50%, #606C38 50%);
+    height: 100vh;
+}
 
 .navbar {
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #2B65EC;
-    color: white;
+    background-color: #fefae0;
+    color: black;
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .title {
@@ -21,37 +37,26 @@
 }
 
 .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 8px 12px;
-    border-radius: 4px;
-    transition: background 0.3s;
+    border-radius: 8px;
+    transition: background-color 0.3s;
 }
 
 .nav-links a:hover {
-    background-color: #4C7DF0;
-}
-
-@media (max-width: 600px) {
-    html, body {
-        overflow-x: hidden;
-    }
-    body {
-        position: relative
-    }
-}
-
-body {
-    font-family: 'IBM Plex Serif';
-    font-style: normal;
-    font-optical-sizing: auto;
-    background-color: #FCFBF4;
+    background-color: #dda15e;
 }
 
 .issuesContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .issue {
@@ -59,10 +64,42 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: #bc6c25;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, padding-top 0.7s ease, padding-bottom 0.7s ease;
+}
+
+.issue:hover {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #dda15e;
 }
 
 #SFSU {
-    background-color: #231161;
+    background-color: #fefae0;
     font-weight: bold;
-    color: #C99700;
+    color: black;
+    border-radius: 8px;
+    padding: 10px 20px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+    .issuesContainer {
+        grid-template-columns: 1fr;
+    }
 }
