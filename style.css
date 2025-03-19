@@ -18,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #fefae0;
+    background: linear-gradient(#fefae080, #fefae080), url('navbar.webp') center/cover no-repeat;
     color: black;
     border-radius: 8px;
     max-width: 90%;
@@ -38,6 +38,7 @@ body {
 
 .nav-links a {
     color: black;
+    font-weight: bold;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 8px;
@@ -48,9 +49,13 @@ body {
     background-color: #dda15e;
 }
 
+.headings {
+    text-decoration: underline;
+}
+
 .issuesContainer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -60,22 +65,49 @@ body {
 }
 
 .issue {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 85% 15%;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.text {
     display: flex;
     flex-direction: column;
+    align-self: center;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background: #bc6c25;
     color: black;
     border-radius: 8px;
-    width: 100%;
+    padding: 0px 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, padding-top 0.7s ease, padding-bottom 0.7s ease;
-}
-
-.issue:hover {
+    transition: background-color 0.3s ease, border 0.3s ease;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+.text:hover {
     background-color: #dda15e;
+    border: 2mm inset black;
 }
 
 #SFSU {
@@ -89,6 +121,7 @@ body {
 }
 
 @media (max-width: 600px) {
+
     html,
     body {
         overflow-x: hidden;
