@@ -6,16 +6,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 600px)">
 </head>
 
 <body>
     <nav class="navbar">
+        <a href="#services" class="invisble">☰</a>
         <div class="title">Water Scarcity</div>
-        <ul class="nav-links">
-            <li><a href="#">Issues</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="dropdown">
+            <a href="#services" class="dropbutton">☰</a>
+            <ul class="nav-links">
+                <li><a href="#">Issues</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <div class="issuesContainer">
