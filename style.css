@@ -9,7 +9,6 @@ Fonts: IBM Plex Serif from Google Fonts
 body {
     font-family: 'IBM Plex Serif';
     font-style: normal;
-    font-optical-sizing: auto;
     background: linear-gradient(45deg, #283618 50%, #606c38 50%);
     height: 100vh;
     width: 100vw;
@@ -56,10 +55,6 @@ body {
 }
 
 /* Content Styles */
-.headings {
-    text-decoration: underline;
-}
-
 .issuesContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -73,8 +68,12 @@ body {
 .issue {
     position: relative;
     background-color: #bc6c25;
+    min-height: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border: solid black 1px;
     border-radius: 8px;
-    min-height: 400px;
+    transition: border 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .issue::before {
@@ -88,6 +87,10 @@ body {
     background-position: center;
     opacity: 0.2;
     z-index: 1;
+}
+
+.issue:hover {
+    border: 2mm inset black;
 }
 
 #overview::before {
@@ -114,6 +117,22 @@ body {
     background-image: url('images/technology.webp');
 }
 
+.headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    color: black;
+    font-size: 18px;
+    transition: top 0.3s ease-in-out;
+}
+
 .text {
     display: flex;
     flex-direction: column;
@@ -128,15 +147,16 @@ body {
     background-color: rgba(188, 108, 37, 0.8);
     color: black;
     padding: 0 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    border: solid black 1px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.text:hover {
-    background-color: #dda15e;
-    border: 2mm inset black;
+.issue:hover .headings {
+    top: -70%;
+}
+
+.issue:hover .text {
+    opacity: 1;
 }
 
 #SFSU {
