@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: linear-gradient(#fefae080, #fefae080), url('images/navbar.webp') center/cover no-repeat;
+    background: linear-gradient(#fefae080, #fefae080), url('../images/navbar.webp') center/cover no-repeat;
     color: black;
     border-radius: 8px;
     max-width: 90%;
@@ -94,27 +94,27 @@ body {
 }
 
 #overview::before {
-    background-image: url('images/overview.webp');
+    background-image: url('../images/overview.webp');
 }
 
 #agricultural::before {
-    background-image: url('images/agricultural.webp');
+    background-image: url('../images/agricultural.webp');
 }
 
 #climatechange::before {
-    background-image: url('images/climatechange.webp');
+    background-image: url('../images/climatechange.webp');
 }
 
 #urbanization::before {
-    background-image: url('images/urbanization.webp');
+    background-image: url('../images/urbanization.webp');
 }
 
 #economics::before {
-    background-image: url('images/economic.webp');
+    background-image: url('../images/economic.webp');
 }
 
 #technology::before {
-    background-image: url('images/technology.webp');
+    background-image: url('../images/technology.webp');
 }
 
 .headings {
@@ -180,4 +180,10 @@ body {
     .issuesContainer {
         grid-template-columns: 1fr;
    }
+}
+
+/* Hide mobile navigation elements on desktop */
+.invisble,
+.dropdown {
+    display: none;
 }

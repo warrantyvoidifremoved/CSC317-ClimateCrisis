@@ -14,10 +14,10 @@ body {
 }
 
 .navbar {
-    border-radius: 0;
+    border-radius: 8px;
 }
 
-.invisble { /* Used to center title in middle of navbar while still having dropdown button on right*/
+.invisible { /* Used to center title in middle of navbar while still having dropdown button on right*/
     display: block;
     visibility: hidden;
 }
@@ -34,7 +34,7 @@ body {
     text-align: center;
     top: 30px;
     left: 0px;
-    background: linear-gradient(#fefae080, #fefae080), url('navbar.webp') center/cover no-repeat;
+    background: linear-gradient(#fefae080, #fefae080), url('../images/navbar.webp') center/cover no-repeat;
     display: none;
     width: 100%;
     z-index: 1;
@@ -67,4 +67,14 @@ body {
 
 .text {
     font-size: 80%;
+}
+
+/* Hide desktop navigation on mobile */
+.desktop-nav {
+    display: none;
+}
+
+/* Show mobile navigation on mobile */
+.dropdown {
+    display: block;
 }
