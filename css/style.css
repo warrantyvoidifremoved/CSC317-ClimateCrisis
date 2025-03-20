@@ -159,7 +159,10 @@ body {
     opacity: 1;
 }
 
-#SFSU {
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fefae0;
     font-weight: bold;
     color: black;
@@ -167,6 +170,12 @@ body {
     padding: 10px 20px;
     max-width: 90%;
     margin: auto;
+}
+
+.social-media {
+    padding-left: 30px;
+    max-width: 32px;
+    max-height: 32px;
 }
 
 /* Media Queries */
