@@ -5,7 +5,8 @@ html, body {
 
 body {
     position: relative;
-    margin: 0;
+    padding: 0;
+    margin: 15px auto;
 }
 
 .title {
@@ -67,6 +68,10 @@ body {
 
 .text {
     font-size: 80%;
+}
+
+#discord {
+    margin-bottom: 0;
 }
 
 /* Hide desktop navigation on mobile */
