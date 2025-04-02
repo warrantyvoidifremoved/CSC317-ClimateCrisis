@@ -6,7 +6,7 @@ html, body {
 body {
     position: relative;
     padding: 0;
-    margin: 15px auto;
+    margin: 0 auto;
 }
 
 .title {
@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 .invisible { /* Used to center title in middle of navbar while still having dropdown button on right*/
@@ -62,12 +62,20 @@ body {
     display: block;
 }
 
+
 .dropbutton:active {
     text-decoration: none;
 }
 
+.headings {
+    position: relative;
+    margin-top: 20px;
+}
+
 .text {
-    font-size: 80%;
+    /* padding:  */
+    font-size: 90%;
+    opacity: 1;
 }
 
 #discord {
