@@ -1,14 +1,12 @@
 
-html, body {
-    overflow-x: hidden;
+body {
+    overflow-x: scroll;
 }
 
 body {
     position: relative;
     padding: 0;
     margin: 0 auto;
-    height: 100vh; /* fixes non-sticky navbar for some reason??? */
-    width: 100vw;
 }
 
 .title {
