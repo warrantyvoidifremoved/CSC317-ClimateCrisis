@@ -58,27 +58,24 @@ body {
     padding: 0;
 }
 
-.dropdown:focus-within .nav-links {
-    display: block;
+.issue:focus .text{
+    opacity: 1;
 }
 
+.issue:focus .headings {
+    top: -70%;
+}
+
+.dropdown:focus-within .nav-links{
+    display: block;
+}
 
 .dropbutton:active {
     text-decoration: none;
 }
 
-.headings {
-    position: relative;
-    margin-top: 20px;
-}
-
-.issue:hover .headings{
-    top: 0%
-}
-
 .text {
     font-size: 90%;
-    opacity: 1;
     border-radius: 8px;
 }
 
