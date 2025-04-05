@@ -59,10 +59,6 @@ body {
     opacity: 1;
 }
 
-<<<<<<< HEAD
-.dropbutton:link {
-    color: black;
-=======
 .issue:focus .headings {
     top: -40%;
 }
@@ -71,9 +67,14 @@ body {
     border: 1mm inset black;
 }
 
+
+.dropbutton:link {
+    color: black;
+}
+
+
 .dropdown:focus-within .nav-links{
     display: block;
->>>>>>> fde7c983057f7615b2f955fcdc3c0f651912d62e
 }
 
 .dropbutton:active {
