@@ -91,7 +91,7 @@ body {
 }
 
 .issue:hover {
-    border: 2mm inset black;
+    border: 1mm inset black;
 }
 
 #overview::before {
@@ -195,7 +195,7 @@ body {
 }
 
 /* Hide mobile navigation elements on desktop */
-.invisble,
+.invisible,
 .dropdown {
     display: none;
 }
