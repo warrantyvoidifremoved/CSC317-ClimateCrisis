@@ -63,7 +63,11 @@ body {
 }
 
 .issue:focus .headings {
-    top: -70%;
+    top: -40%;
+}
+
+.issue:focus {
+    border: 2mm inset black;
 }
 
 .dropdown:focus-within .nav-links{
