@@ -66,6 +66,7 @@ body {
 }
 
 .issue {
+    display:flex;
     position: relative;
     background-color: #bc6c25;
     min-height: 500px;
@@ -118,11 +119,8 @@ body {
 }
 
 .headings {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    position: absolute;
+    margin: auto;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
@@ -153,7 +151,7 @@ body {
 }
 
 .issue:hover .headings {
-    top: -70%;
+    top: -35%;
 }
 
 .issue:hover .text {
