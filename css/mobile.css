@@ -51,6 +51,7 @@ body {
     display: block;
     width: 100%;
     text-align: center;
+    border-radius: 0;
     padding: 0;
 }
 
@@ -66,12 +67,22 @@ body {
     border: 1mm inset black;
 }
 
+
+.dropbutton:link {
+    color: black;
+}
+
+
 .dropdown:focus-within .nav-links{
     display: block;
 }
 
 .dropbutton:active {
-    text-decoration: none;
+    color: black;
+}
+
+.dropbutton:visited {
+    color: black;
 }
 
 .text {
