@@ -3,7 +3,7 @@
 This repository contains the files for CSC-317 Assignment: Climate Crisis, with the final product being a webpage outlining the water scarcity climate crisis.
 
 ## Design Choices
-This project's color pallette is inspired by earth tones.
+This project's color palette is inspired by Earth tones.
 
 <img width="500" src="https://i.imgur.com/5efCSfO.png">
 
