@@ -1,9 +1,5 @@
-
 body {
     overflow-x: scroll;
-}
-
-body {
     position: relative;
     padding: 0;
     margin: 0 auto;
@@ -59,12 +55,25 @@ body {
     padding: 0;
 }
 
-.dropdown:focus-within .nav-links {
-    display: block;
+.issue:focus .text{
+    opacity: 1;
 }
 
+<<<<<<< HEAD
 .dropbutton:link {
     color: black;
+=======
+.issue:focus .headings {
+    top: -40%;
+}
+
+.issue:focus {
+    border: 1mm inset black;
+}
+
+.dropdown:focus-within .nav-links{
+    display: block;
+>>>>>>> fde7c983057f7615b2f955fcdc3c0f651912d62e
 }
 
 .dropbutton:active {
@@ -75,18 +84,8 @@ body {
     color: black;
 }
 
-.headings {
-    position: relative;
-    margin-top: 20px;
-}
-
-.issue:hover .headings{
-    top: 0%
-}
-
 .text {
     font-size: 90%;
-    opacity: 1;
     border-radius: 8px;
 }
 
