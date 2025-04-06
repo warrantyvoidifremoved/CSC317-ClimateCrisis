@@ -1,5 +1,5 @@
 # CSC-317 Assignment: Climate Crisis
-## Deployed link: https://warrantyvoidifremoved.github.io/CSC317-ClimateCrisis/
+## Deployed link: [https://warrantyvoidifremoved.github.io/CSC317-ClimateCrisis/](https://rad-sprite-aa386f.netlify.app/)
 This repository contains the files for CSC-317 Assignment: Climate Crisis, with the final product being a webpage outlining the water scarcity climate crisis.
 
 ## Design Choices
