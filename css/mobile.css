@@ -67,6 +67,10 @@ body {
     border: 0.1875rem inset black; /* 3px */
 }
 
+.issue:focus::after {
+    opacity: 0;
+}
+
 .dropbutton:link {
     color: black;
 }

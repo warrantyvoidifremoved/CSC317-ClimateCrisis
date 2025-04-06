@@ -79,6 +79,7 @@ body {
     border-radius: 0.5rem; /* 8px */
     transition: border 0.3s ease-in-out;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .issue::before {
@@ -94,8 +95,25 @@ body {
     z-index: 1;
 }
 
+.issue::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem; /* 32px */
+    height: 2rem; /* 32px */
+    opacity: 1;
+    background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    transition: opacity 0.3s ease-in-out;
+}
+
 .issue:hover {
-    border: 0.1875rem inset black;
+    border: 0.1875rem inset black; /* 3px */
+}
+
+.issue:hover::after {
+    opacity: 0;
 }
 
 #overview::before {
@@ -148,6 +166,7 @@ body {
     left: 0;
     z-index: 2;
     background-color: rgba(188, 108, 37, 0.8);
+    border-radius: 0.5rem; /* 8px */
     color: black;
     padding: 0 0.625rem; /* 0 10px */
     opacity: 0;
