@@ -6,12 +6,12 @@ body {
 }
 
 .title {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     margin: 0 auto;
 }
 
 .navbar {
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .invisible { /* Used to center title in middle of navbar while still having dropdown button on right*/
@@ -29,8 +29,8 @@ body {
 .nav-links {
     position: absolute;
     text-align: center;
-    top: 30px;
-    left: 0px;
+    top: 1.875rem; /* 30px */
+    left: 0;
     background: linear-gradient(#fefae080, #fefae080), url('../images/navbar.webp') center/cover no-repeat;
     display: none;
     width: 100%;
@@ -42,7 +42,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 0;
-    border: 1px solid #726d4c80;
+    border: 0.0625rem solid #726d4c80; /* 1px */
 }
 
 .nav-links a {
@@ -64,7 +64,7 @@ body {
 }
 
 .issue:focus {
-    border: 1mm inset black;
+    border: 0.1875rem inset black; /* 3px */
 }
 
 
@@ -87,7 +87,11 @@ body {
 
 .text {
     font-size: 90%;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px */
+}
+
+.footer {
+    border-radius: 0;
 }
 
 #discord {

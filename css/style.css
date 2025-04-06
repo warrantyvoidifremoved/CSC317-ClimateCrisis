@@ -95,7 +95,7 @@ body {
 }
 
 .issue:hover {
-    border: 1mm inset black;
+    border: 0.1875rem inset black;
 }
 
 #overview::before {
