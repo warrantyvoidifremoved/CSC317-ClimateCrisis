@@ -67,20 +67,8 @@ body {
     border: 0.1875rem inset black; /* 3px */
 }
 
-.dropbutton:link {
-    color: black;
-}
-
 .dropdown:focus-within .nav-links{
     display: block;
-}
-
-.dropbutton:active {
-    color: black;
-}
-
-.dropbutton:visited {
-    color: black;
 }
 
 .text {
