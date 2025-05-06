@@ -1,19 +1,16 @@
-# CSC-317 Assignment: Term Project
-## Deployed link: TBD
-This repository contains the files for CSC-317 Assignment: Term Project, with the final product being an e-commerce webpage.
+# CSC-317 Assignment: Climate Crisis
+## Deployed link: https://rad-sprite-aa386f.netlify.app/
+This repository contains the files for CSC-317 Assignment: Climate Crisis, with the final product being a webpage outlining the water scarcity climate crisis.
 
 ## Design Choices
-Color palette: TBD
+This project's color palette is inspired by Earth tones.
 
-Fonts: TBD
+<img width="500" src="https://i.imgur.com/5efCSfO.png">
 
-Basic pages and features of the webpage:
-- Storefront
-- Products
-- Payment 
-- Login / Signup
-- About
-- FAQ
-- User Profile
-- Search
-- Navigation
+Source: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25
+
+We chose to use IBM Plex Serif as the font throughout the website.
+
+Source: https://fonts.google.com/specimen/IBM+Plex+Serif
+
+On mobile, the website’s navbar ended up appearing too cluttered at the top of the page, with both the site name and other buttons squished together, as well as the navbar being cropped off the page. We decided to only keep the main title on the navbar and add a dropdown menu that displays the other navbar items once tapped.
